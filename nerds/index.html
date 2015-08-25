@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Веб-студия «Nerds»</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!--Шапка-->
+	<header class="page-header">
+		
+		<!--Меню-->
+		<div class="container clearfix">
+			<div class="page-header-logo">
+				<a href="#"><img src="img/logo.png" alt="Nerds"></a>
+			</div>
+			<nav class="page-navigation">
+				<ul>
+					<li class="active"><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li class="cart"><a href="#" class="header-cart-link">Корзина</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<!--Слайдер-->
+		<div class="slider">
+			<input type="radio" name="slides" id="sl-1" checked>
+			<input type="radio" name="slides" id="sl-2">
+			<input type="radio" name="slides" id="sl-3">
+			<div>
+				<label for="sl-1"></label>
+				<label for="sl-2"></label>
+				<label for="sl-3"></label>
+			</div>
+			<div class="slides">
+				<div class="slide-1">
+					<div class="slide-text">
+						<h2 class="slide-title">Долго, дорого, <br> скрупулезно</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slide-image">
+						<img src="img/slider-img-1.png" alt="slide-1">
+					</div>
+				</div>
+				<div class="slide-2">
+					<div class="slide-text">
+						<h2 class="slide-title">Любите ли вы математику,<br> как любим ее мы?</h2>
+						<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать.</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slide-image">
+						<img src="img/slider-img-2.png" alt="slide-1">
+					</div>
+				</div>
+				<div class="slide-3">
+					<div class="slide-text">
+						<h2 class="slide-title">Только наркотики,<br> только хардкор!</h2>
+						<p>Все дизайнерские решения в нашей компании принимаются<br> только под воздействием качественных галлюциногенов.</p>
+						<a class="slide-button" href="#">Узнать больше</a>
+					</div>
+					<div class="slide-image">
+						<img src="img/slider-img-3.png" alt="slide-1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!--Основное содержимое-->
+	<div class="container">
+		
+		<!--Услуги компании-->
+		<div class="services clearfix">
+			<div class="service">
+				<img src="img/service-websites.jpg" width="240" height="124" alt="Веб-сайты">
+				<h2>Веб-сайты</h2>
+				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+				<a href="#" class="service-btn btn-red">Заказать</a>
+			</div>
+			<div class="service">
+				<img src="img/service-apps.jpg" width="240" height="124" alt="Приложения">
+				<h2>Приложения</h2>
+				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+				<a href="#" class="service-btn btn-green">Заказать</a>
+			</div>
+			<div class="service">
+				<img src="img/service-presentations.jpg" width="240" height="124" alt="Презентации">
+				<h2>Презентации</h2>
+				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+				<a href="#" class="service-btn btn-yellow">Заказать</a>
+			</div>
+		</div>
+		
+		<!--О компании-->
+		<div class="main-about">
+			
+			<!--Левая колонка-->
+			<section class="left-column">
+				<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический <br> расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+				<h2>Выполняем заказы на разработку:</h2>
+				<ul class="about-services">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для IOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</section>
+			
+			<!--Правая колонка-->
+			<div class="right-column">
+				<img src="img/logo.png" alt="Nerds">
+				<h2> Как мы работаем:</h2>
+				<ul class="about-work">
+					<li>С самоотдачей 146%</li>
+					<li>Соблюдая сроки на 100%</li>
+					<li>По предоплате 50%</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--Клиенты-->
+		<div class="clients">
+			<a href="#" class="client"><img src="img/logo-glukhanko.png" alt="Glukhanko"></a>
+			<a href="#" class="client"><img src="img/logo-html-academy.png" alt="HTML Academy"></a>
+			<a href="#" class="client"><img src="img/logo-borodinski.png" alt="Barbershop «Borodinski»"></a>
+		</div>
+	</div>
+	
+	<!--Подвал-->
+	<footer class="main-footer">
+		
+		<!--Карта-->
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728712!2d30.323083299999993!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1440272495507"></iframe>
+			<div class="map-conteiner clearfix">
+				<div class="contacts">
+					<p>Nёrds Design Studio</p>
+					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+					<p>тел. +7 (812) 275-75-75</p>
+					<a href="#" class="btn-red">Напишите нам</a>
+				</div>
+				<div class="map-marker">
+					<img src="img/map-marker.png" alt="Nerds">
+					<img src="img/logo.png" alt="Nerds">
+				</div>
+			</div>
+		</div>	
+		<div class="container clearfix">
+			
+			<!--Соцсети-->
+			<div class="footer-social">
+				<div class="footer-link">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				</div>
+				<div class="footer-text">
+					<h2>Давайте дружить, это выгодно!</h2>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
