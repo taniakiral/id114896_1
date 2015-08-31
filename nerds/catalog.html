@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Веб-студия «Nerds»</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -32,7 +33,7 @@
 	</header>
 	
 	<!--Основное содержимое-->
-	<div class="container">
+	<div class="catalog-container">
 		
 		<!--Фильтр 1-->
 		<div class="filter">
@@ -44,6 +45,10 @@
 						от <input class="min-price" type="text" value="0">
 						до <input class="max-price" type="text" value="15 000">
 					</div>
+					<!--
+						от <input class="min-price" type="number" value="0">
+						до <input class="max-price" type="number" value="15 000">
+-->
 				</div>
 				<div class="filter-selection">
 					<h2>Сетка:</h2>
@@ -186,23 +191,20 @@
 	<footer class="main-footer">
 		
 		<!--Карта-->
-		<div class="map">
-			<img src="img/map.jpg" width="1199" height="416" alt="Map">
-			<div class="map-conteiner clearfix">
-				<div class="contacts">
-					<p>Nёrds Design Studio</p>
-					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn-red">Напишите нам</a>
-				</div>
-				<div class="map-marker">
-					<img src="img/map-marker.png" width="231" height="190" alt="Nerds">
-				</div>
+		<div class="map clearfix">
+			<div class="contacts">
+				<p>Nёrds Design Studio</p>
+				<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a href="#" class="btn-red">Напишите нам</a>
+			</div>
+			<div class="map-marker">
+				<img src="img/map-marker.png" width="231" height="190" alt="Nerds">
 			</div>
 		</div>	
+		
+		<!--Соцсети-->
 		<div class="container clearfix">
-			
-			<!--Соцсети-->
 			<div class="footer-social">
 				<div class="footer-link">
 					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>

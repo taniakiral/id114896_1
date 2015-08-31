@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп «Бородинский»</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -41,7 +42,7 @@
 		<div class="catalog clearfix">
 			<aside class="catalog-filter">
 				<form method="post" action="#">
-					<h2>Производители:</h2>
+					<h2>Производители:</h2> <!--div class="filter-title"-->
 					<input type="checkbox" name="produce" id="produce-1" value="a-1" checked>
 					<label for="produce-1">Baxter of California</label>
 					<input type="checkbox" name="produce" id="produce-2" value="a-2">
@@ -70,9 +71,10 @@
 			<article class="catalog-item">
 				<img src="img/catalog-item-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
 				<div class="catalog-item-content">
-					<h3 class="name-product">Набор для путешествий «Baxter of California»</h3>
+					<h3 class="name-product">Набор для путешествий «Baxter of California»</h3> <!--либо div + h2, либо div class, либо article + h1, можно br-->
+					<!--<h1 class="name-product"><a href="#"><span class="product-category">Набор для путешествий</span><span class="product-title">«Baxter of California»</span></a></h1>-->
 					<div class="price">
-						<div class="price-value">2 900 руб.</div>
+						<div class="price-value">2 900 руб.</div><!--span, а не div-->
 						<a href="#" class="price-btn">Купить</a>
 					</div>
 				</div>

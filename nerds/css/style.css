@@ -1,26 +1,304 @@
-body{
-	color:#000;
-	font-style:normal;
-	font-weight:normal;
-	font-size:16px;
-	line-height:22px;
-	font-family:"Roboto", sans-serif;
+html,
+body { 
+	min-width: 920px;
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+	content:'';
+	display: table;
+	clear: both;
+}
+
+li {
+    list-style: none;
 }
 
 h1{
-	color:#000;
-	font-style:normal;
-	font-weight:normal;
+	font-weight:500;
 	font-size:36px;
 	line-height:36px;
-	font-family:"Roboto", sans-serif;
 }
 
-h2{
-	color:#000;
-	font-style:normal;
-	font-weight:normal;
-	font-size:18px;
-	line-height:30px;
-	font-family:"Roboto", sans-serif;
+h2 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+p {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+a { 
+	color: #000;
+	text-decoration: none;
+}
+
+/*Шапка*/	
+.container {
+	width: 880px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.page-header-logo {
+	float: left;
+	width: 139px;
+	height: 56px;
+	padding-top: 10px;
+}
+
+nav {
+	float: right;
+	padding-top: 27px;
+}
+
+nav a {
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.page-navigation li {
+    display: inline-block;
+	margin-left: 46px;
+}
+
+.page-navigation .cart {
+	margin-left: 96px;
+}
+
+/*Слайдер*/
+
+.slide-1, .slide-2, .slide-3 {
+	min-width: 880px;
+}
+
+.slides {
+	width: 880px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.slide-text {
+	float: left;
+}
+
+.slide-image {
+	float: right;
+}
+
+.slide-button {
+	display: block;
+	width:240px;
+	background: #fb565a;
+	padding: 10px;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*О компании*/
+.services {
+	border-bottom: 2px solid #eeeeee;
+}
+
+.service {
+	display: inline-block;
+	margin-top: 80px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+}
+
+.service:last-child {
+	margin-right: 0;
+}
+
+.service h2 {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.service p {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.service a {
+	display: block;
+	float: left;
+	width: 140px;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.btn-red {
+	background: #fb565a;
+}
+
+.btn-green {
+	background: #00ca74;
+}
+
+.btn-yellow {
+	background: #efc84a;
+}
+	
+.main-about {
+	width: 880px;
+	border-bottom: 2px solid #eeeeee;
+	margin-top: 80px;
+	padding-bottom: 80px;
+}
+
+.left-column {
+	float: left;
+}
+
+.left-column h1 {
+	margin:0;
+}
+
+.left-column h2 {
+	margin-top: 50px;
+	margin-bottom: 26px;
+}
+
+.about-services {
+	margin: 0;
+}
+
+.about-services li {
+	margin-top: 27px;
+}
+
+.about-services li:first-child {
+	margin-top: 0;
+}
+
+.right-column {
+	float: right;
+}
+
+.right-column h2 {
+	margin-top: 50px;
+	margin-bottom: 26px;
+}
+
+.about-work {
+	margin: 0;
+}
+
+.about-work li {
+	margin-top: 27px;
+}
+
+.about-work li:first-child {
+	margin-top: 0;
+}
+
+.clients {
+	border-bottom: 2px solid #eeeeee;
+	margin-top: 55px;
+	padding-bottom: 45px;
+}
+
+.clients a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+	margin-left: 25px;
+}
+
+.clients a:last-child {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/*Подвал*/
+.map {
+	width: 1200px;
+	min-height: 417px;
+	margin: 0 auto;
+	margin-top: 85px;
+	background: #e9e5dc url("../img/map.jpg") no-repeat center;
+}
+
+.contacts {
+	float: left;
+	padding: 20px;
+	margin-top: 90px;
+	margin-left: 160px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 500;
+	background: #ffffff;
+}
+
+.contacts p:first-child {
+	line-height: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.contacts a {
+	display: block;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 auto;
+	background: #fb565a;
+}
+
+.map-marker {
+    float: right;
+    width: 155px;
+	margin-top: 110px;
+	margin-right: 205px;
+}
+
+.footer-link {
+	float: left;
+	padding-top: 79px;
+	padding-bottom: 76px;
+}
+
+.footer-text {
+	float: right;
+	padding-top: 79px;
+	padding-bottom: 76px;
+}
+
+.footer-text h2 {
+	font-weight: 500;
+	font-size: 36px;
+	text-transform: none;
+	line-height: 36px;
+	margin: 0 0 13px 0;
 }
