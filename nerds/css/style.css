@@ -29,7 +29,7 @@ h2 {
 	text-transform: uppercase;
 }
 
-a { 
+a {
 	color: #000;
 	text-decoration: none;
 }
@@ -45,7 +45,7 @@ a {
 	width: 880px;
 	margin: 0 auto;
 	margin-top: 10px;
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 	padding: 0 10px;
 }
 
@@ -192,7 +192,7 @@ nav a {
 	margin: 0 auto;
 	text-align: center;
 	font-weight: 500;
-    font-size: 40px;
+	font-size: 40px;
 	line-height: 48px;
 	text-transform: uppercase;
 	margin-top: 50px;
@@ -325,23 +325,49 @@ nav a {
 /*Фильтр*/
 .filter {
 	float: left;
-    width: 240px;
+	width: 240px;
 }
 
 .form-title {
+	margin-bottom: 20px;
 	font-weight: 500;
 	font-size: 18px;
-    line-height:30px;
-    text-transform: uppercase;
+	line-height:30px;
+	text-transform: uppercase;
 }
 
 label {
-	display: block;
 	line-height: 20px;
 }
 
 input[type="text"] {
 	width: 80px;
+}
+
+.price-filter-container {
+	padding-top: 20px;
+}
+
+.filter-price {
+	padding-bottom: 45px;
+}
+
+.filter-grid,
+.filter-features {
+	padding-bottom: 25px;
+}
+
+.filter-grid label,
+.filter-features label {
+	display: block;
+	position: relative; 
+	margin-bottom:20px;
+	padding:0 35px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	position: absolute;
 }
 
 /*Сортировка*/
@@ -357,11 +383,11 @@ input[type="text"] {
 }
 
 .catalog-filter li {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 	margin-right: 36px;
-    font-size: 12px;
-    line-height: 18px;
+	font-size: 12px;
+	line-height: 18px;
 	text-transform: uppercase;
 }
 
@@ -386,7 +412,7 @@ input[type="text"] {
 }
 
 .catalog-items{
-    font-size: 0px;
+	font-size: 0px;
 }
 
 .catalog-item {
@@ -398,7 +424,7 @@ input[type="text"] {
 }
 
 .catalog-item:nth-child(2n) {
-    margin-right: 0px;
+	margin-right: 0px;
 }
 
 .catalog-item-tooltip {
@@ -432,11 +458,11 @@ input[type="text"] {
 
 .catalog-item-button {
 	padding: 12px 0px;
-  	padding-left: 34px;
+	padding-left: 34px;
 	padding-right: 30px;
 	color: #fff;
 	font-weight: 500;
-    font-size: 18px;
+	font-size: 18px;
 	text-transform: uppercase;
 	background: #fb565a;
 	border-radius: 3px;
@@ -453,18 +479,18 @@ input[type="text"] {
 }
 
 .pagination li {
-    display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .pagination a {
-    padding: 10px 16px;
-    margin-right: 7px;
+	padding: 10px 16px;
+	margin-right: 7px;
 	font-size: 12px;
-    line-height: 18px;
+	line-height: 18px;
 	text-transform: uppercase;
-    border-radius: 3px;
-    background: #f1f1f1;
+	border-radius: 3px;
+	background: #f1f1f1;
 }
 
 /*Подвал*/
@@ -517,8 +543,8 @@ input[type="text"] {
 }
 
 .map-marker {
-    float: right;
-    width: 155px;
+	float: right;
+	width: 155px;
 	margin-top: 110px;
 	margin-right: 315px;
 }
@@ -527,7 +553,7 @@ input[type="text"] {
 	width: 880px;
 	margin: 0 auto;
 	margin-top: 78px;
-    margin-bottom: 77px;
+	margin-bottom: 77px;
 	padding: 0 10px;
 }
 
