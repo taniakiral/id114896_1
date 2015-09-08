@@ -6,44 +6,53 @@
 	<title>Веб-студия «Nerds»</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	<!--Шапка-->
 	<header class="page-header">
-		
-		<!--Меню-->
-		<div class="header-container clearfix">
-			<div class="page-header-logo">
-				<a href="#"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
+		<div class="container">
+
+			<!--Меню-->
+			<div class="header-top clearfix">
+				<div class="page-header-logo">
+					<a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
+				</div>
+				<nav class="page-navigation">
+					<ul>
+						<li><a href="index.html">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li class="active"><a href="catalog.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li class="cart"><a href="#" class="header-cart-link"><span class="icon-basket"></span>Корзина</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav class="page-navigation">
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li class="active"><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li class="cart"><a href="#" class="header-cart-link">Корзина</a></li>
-				</ul>
-			</nav>
+
+			<!--Заголовок-->
+			<h1 class="header-title">Добро пожаловать в магазин готовых макетов</h1>
 		</div>
-		
-		<!--Заголовок-->
-		<h1 class="header-title">Добро пожаловать в магазин <br> готовых макетов</h1>
 	</header>
 	
 	<!--Основное содержимое-->
-	<div class="catalog clearfix">
+	<div class="catalog-container clearfix">
 		
 		<!--Фильтр-->
 		<div class="filter">
 			<form action="#" method="post">
-				<div class="filter-price">
+				<div class="range-filter">
 					<div class="form-title">Стоимость:</div>
-					<input type="range" min="0" max="15 000" step="1" name="price-filter" value="12 000">
-					<div class="price-filter-container">
-						от <input class="min-price" type="text" value="0">
-						до <input class="max-price" type="text" value="15 000">
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="toggle toggle-min"></div>
+						<div class="toggle toggle-max"></div>
+					</div>
+					<div class="price-controls">
+						<label class="min-price">от<input name="min-prace" type="text" value="0"></label>
+						<label class="max-price">до<input name="max-prace" type="text" value="15000"></label>
 					</div>
 				</div>
 				<div class="filter-grid">
@@ -68,7 +77,7 @@
 					<input type="checkbox" name="checkbox-item" id="chbx-5" value="checkbox-item-5">
 					<label for="chbx-5">Корзина</label>
 				</div>
-					<button type="submit">Показать</button>
+					<button class="filter-btn" type="submit">Показать</button>
 			</form>
 		</div>
 		
@@ -81,9 +90,11 @@
 				<li><a href="#">По цене</a></li>
 				<li><a href="#">По типу</a></li>
 				<li><a href="#">По функционалу</a></li>
+				<!--<li><a class="sorting"><span class="icon-down-dir"></span></a></li>
+				<li><a class="sorting"><span class="icon-up-dir"></span></a></li>-->
 			</ul>
-			<div class="sorting-down"><a href="#"></a></div>
-			<div class="sorting-up"><a href="#"></a></div>
+			<a class="sorting"><span class="icon-down-dir"></span></a>
+			<a class="sorting"><span class="icon-up-dir"></span></a>
 			
 			<div class="catalog-items">
 				<!--Карточка сайта №1-->
@@ -94,12 +105,12 @@
 						<li></li>
 					</ul>
 					<a href="#" class="catalog-item-img">
-						<img src="img/catalog-item-1.jpg" width="240" height="240" alt="Sunset">
+						<img src="img/catalog-item-1.jpg" width="240" height="240" alt="Aviator">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
-						<p>Интернет-магазин<br>с личным кабинетом</p>
-						<a href="#" class="catalog-item-button">10000 р.</a>
+						<h1 class="catalog-item-link">Aviator</h1>
+						<p>Односторонний макет с авторским дизайном</p>
+						<a href="#" class="catalog-item-button">8000 р.</a>
 					</div>
 				</article>
 
@@ -111,10 +122,10 @@
 						<li></li>
 					</ul>
 					<a href="#" class="catalog-item-img">
-						<img src="img/catalog-item-2.jpg" width="240" height="240" alt="Aviator">
+						<img src="img/catalog-item-2.jpg" width="240" height="240" alt="Sunset">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
+						<h1 class="catalog-item-link">Sunset</h1>
 						<p>Интернет-магазин<br>с личным кабинетом</p>
 						<a href="#" class="catalog-item-button">10000 р.</a>
 					</div>
@@ -131,8 +142,8 @@
 						<img src="img/catalog-item-3.jpg" width="240" height="240"alt="Forte">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
-						<p>Интернет-магазин<br>с личным кабинетом</p>
+						<h1 class="catalog-item-link">Forte</h1>
+						<p>Интернет-магазин с личным кабинетом</p>
 						<a href="#" class="catalog-item-button">10000 р.</a>
 					</div>
 				</article>
@@ -148,8 +159,8 @@
 						<img src="img/catalog-item-4.jpg" width="240" height="240" alt="Modern Organic Thai">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
-						<p>Интернет-магазин<br>с личным кабинетом</p>
+						<h1 class="catalog-item-link">Modern Organic Thai</h1>
+						<p>Интернет-магазин с личным кабинетом</p>
 						<a href="#" class="catalog-item-button">10000 р.</a>
 					</div>
 				</article>
@@ -165,8 +176,8 @@
 						<img src="img/catalog-item-5.jpg" width="240" height="240" alt="Avenue">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
-						<p>Интернет-магазин<br>с личным кабинетом</p>
+						<h1 class="catalog-item-link">Avenue</h1>
+						<p>Интернет-магазин с личным кабинетом</p>
 						<a href="#" class="catalog-item-button">10000 р.</a>
 					</div>
 				</article>
@@ -182,8 +193,8 @@
 						<img src="img/catalog-item-6.jpg" width="240" height="240" alt="Dovetail">
 					</a>
 					<div class="catalog-item-tooltip">
-						<h1 class="catalog-item-link"><a href="#">Sunset</a></h1>
-						<p>Интернет-магазин<br>с личным кабинетом</p>
+						<h1 class="catalog-item-link">Dovetail</h1>
+						<p>Интернет-магазин с личным кабинетом</p>
 						<a href="#" class="catalog-item-button">10000 р.</a>
 					</div>
 				</article>
@@ -203,8 +214,8 @@
 	<footer class="main-footer">
 		
 		<!--Карта-->
-		<div class="map clearfix">
-			<div class="map-conteiner">
+		<div class="map">
+			<div class="map-container clearfix">
 				<div class="contacts">
 					<p>Nёrds Design Studio</p>
 					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
@@ -218,12 +229,12 @@
 		</div>	
 		
 		<!--Соцсети-->
-		<div class="footer-container">
+		<div class="footer-bottom container">
 			<div class="footer-social clearfix">
 				<div class="footer-link">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+					<a href="#" class="social-btn social-btn-vk"><span class="icon-vk"></span></a>
+					<a href="#" class="social-btn social-btn-fb"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-btn social-btn-inst"><span class="icon-instagram"></span></a>
 				</div>
 				<div class="footer-text">
 					<p class="footer-title">Давайте дружить, это выгодно!</p>

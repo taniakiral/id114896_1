@@ -6,75 +6,69 @@
 	<title>Веб-студия «Nerds»</title>
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 	<!--Шапка-->
 	<header class="page-header">
-		
-		<!--Меню-->
-		<div class="header-container clearfix">
-			<div class="page-header-logo">
-				<a href="#"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
-			</div>
-			<nav class="page-navigation">
-				<ul>
-					<li class="active"><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li class="cart"><a href="#" class="header-cart-link">Корзина</a></li>
-				</ul>
-			</nav>
-		</div>
-		
-		<!--Слайдер-->
-		<div class="slider">
-			<input type="radio" id="btn-1" name="toggle" checked>
-			<input type="radio" id="btn-2" name="toggle">
-			<input type="radio" id="btn-3" name="toggle">
-			<div class="slider-controls">
-				<label for="btn-1"></label>
-				<label for="btn-2"></label>
-				<label for="btn-3"></label>
-			</div>
-			<div class="slides">
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Долго, дорого, <br> скрупулезно</div>
-						<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-						<a class="btn" href="#">Узнать больше</a>
-					</div>
-					<!--<div class="slide-image">
-						<img src="img/slider-img-1.png" width="338" height="231" alt="slide-1">
-					</div>-->
+		<div class="container">
+
+			<!--Меню-->
+			<div class="header-top clearfix">
+				<div class="page-header-logo">
+					<a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
 				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
-						<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать.</p>
-						<a class="btn" href="#">Узнать больше</a>
-					</div>
-					<!--<div class="slide-image">
-						<img src="img/slider-img-2.png" width="230" height="249" alt="slide-1">
-					</div>-->
+				<nav class="page-navigation">
+					<ul>
+						<li class="active"><a href="index.html">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li class="cart"><a href="#" class="header-cart-link"><span class="icon-basket"></span>Корзина</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!--Слайдер-->
+			<div class="slider">
+				<input type="radio" id="btn-1" name="toggle" checked>
+				<input type="radio" id="btn-2" name="toggle">
+				<input type="radio" id="btn-3" name="toggle">
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
 				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Только наркотики,<br> только хардкор!</div>
-						<p>Все дизайнерские решения в нашей компании принимаются<br> только под воздействием качественных галлюциногенов.</p>
-						<a class="btn" href="#">Узнать больше</a>
+				<div class="slides">
+					<div class="slide">
+						<div class="slide-text">
+							<div class="slide-title">Долго, дорого, <br> скрупулезно</div>
+							<p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+							<a class="btn" href="#">Узнать больше</a>
+						</div>
 					</div>
-					<!--<div class="slide-image">
-						<img src="img/slider-img-3.png" width="333" height="319" alt="slide-1">
-					</div>-->
+					<div class="slide">
+						<div class="slide-text">
+							<div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+							<p>Нашим дизайнерам мы удаляем нейроны, ответственные<br> за креатив, чтобы дать им возможность все просчитать.</p>
+							<a class="btn" href="#">Узнать больше</a>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-text">
+							<div class="slide-title">Только наркотики,<br> только хардкор!</div>
+							<p>Все дизайнерские решения в нашей компании принимаются<br> только под воздействием качественных галлюциногенов.</p>
+							<a class="btn" href="#">Узнать больше</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 	
 	<!--Основное содержимое-->
-	<div class="main">
+	<div class="container">
 		
 		<!--Услуги компании-->
 		<div class="services clearfix">
@@ -106,7 +100,7 @@
 				<h1>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 				<h2>Выполняем заказы на разработку:</h2>
-				<ul class="about-services">
+				<ul class="about">
 					<li>Веб-сайтов любой сложности</li>
 					<li>Мобильных приложений для IOS и Android</li>
 					<li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -117,7 +111,7 @@
 			<div class="right-column">
 				<img src="img/logo-since.png" width="240" height="119" alt="Nerds">
 				<h2> Как мы работаем:</h2>
-				<ul class="about-work">
+				<ul class="about">
 					<li>С самоотдачей 146%</li>
 					<li>Соблюдая сроки на 100%</li>
 					<li>По предоплате 50%</li>
@@ -137,8 +131,8 @@
 	<footer class="main-footer">
 		
 		<!--Карта-->
-		<div class="map clearfix">
-			<div class="map-conteiner">
+		<div class="map">
+			<div class="map-container clearfix">
 				<div class="contacts">
 					<p>Nёrds Design Studio</p>
 					<p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
@@ -152,12 +146,12 @@
 		</div>	
 		
 		<!--Соцсети-->
-		<div class="footer-container">
+		<div class="footer-bottom container">
 			<div class="footer-social clearfix">
 				<div class="footer-link">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+					<a href="#" class="social-btn social-btn-vk"><span class="icon-vk"></span></a>
+					<a href="#" class="social-btn social-btn-fb"><span class="icon-facebook"></span></a>
+					<a href="#" class="social-btn social-btn-inst"><span class="icon-instagram"></span></a>
 				</div>
 				<div class="footer-text">
 					<p class="footer-title">Давайте дружить, это выгодно!</p>
