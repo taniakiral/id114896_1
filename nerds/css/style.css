@@ -233,6 +233,14 @@ nav {
 	background: #fb565a;
 }
 
+.slide .btn:hover {
+	background: #d6494d;
+}
+
+.slide .btn:active {
+	background: #b63538;
+}
+
 .slide:nth-child(1) {
 	background-image: url('../img/slider-img-1.png');
 }
@@ -901,11 +909,11 @@ input[type="checkbox"]:checked + label:hover:before {
 	position: absolute;
 	z-index: 10;
     top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-	width: 240px;
+    left: 50%;
+    transform: translate(0%, -50%);
+	width: 250px;
 	margin-left: -440px;
-	padding: 24px 20px;
+	padding: 24px 0;
 	background: #fff;	
 }
 
@@ -916,7 +924,7 @@ input[type="checkbox"]:checked + label:hover:before {
 }
 
 .contacts p:first-child {
-	margin-top: 24px;
+	margin-top: 0;
 	color: #000;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -1085,11 +1093,7 @@ input[type="checkbox"]:checked + label:hover:before {
     transform: rotate(-45deg);
 }
 
-.popup-form input:hover {
-	border-color: #a2a9ac;
-}
-
-.popup-form input {
+.popup-input {
 	width: 186px;
 	margin-top: 8px;
 	margin-bottom: 19px;
@@ -1102,7 +1106,7 @@ input[type="checkbox"]:checked + label:hover:before {
 	border-radius: 3px;
 }
 
-.popup-form label {
+.popup-label {
 	display: block;
 	color: #000;
 	font-size: 16px;
@@ -1118,7 +1122,7 @@ input[type="checkbox"]:checked + label:hover:before {
     float: right;
 }
 
-.popup-form  textarea {
+.popup-textarea {
 	width: 100%;
 	padding: 0;
 	padding-top: 8px;
@@ -1133,6 +1137,21 @@ input[type="checkbox"]:checked + label:hover:before {
 	line-height: 18px;
 	text-transform: uppercase;
 	box-sizing: border-box;
+}
+
+.popup-input:hover,
+.popup-textarea:hover {
+	border-color: #a2a9ac;
+}
+.popup-input:focus,
+.popup-textarea:focus {
+	border-color: #56bffb;
+}
+
+.popup button, 
+.popup button:active, 
+.popup button:focus {
+    outline: none;
 }
 
 .popup .btn-popup-send {
@@ -1150,6 +1169,15 @@ input[type="checkbox"]:checked + label:hover:before {
    	background: #fb565a;
 }
 
+.popup .btn-popup-send:hover {
+	background: #d6494d;
+}
+
+.popup .btn-popup-send:active {
+	background: #b63538;
+	border: none;
+}
+
 .popup .btn-popup-reset {
     float: right;
 	padding: 10px 85px;
@@ -1163,10 +1191,16 @@ input[type="checkbox"]:checked + label:hover:before {
 	background: #f1f1f1;
 }
 
-.popup.btn-popup-reset:hover {
+.popup .btn-popup-reset:hover {
 	background: #e5e5e5;
 }
 
+.popup .btn-popup-reset:active {
+	padding-top: 7px;
+	border-top: 3px solid #b5b5b5;
+	background: #d5d5d5;
+}
+	
 ::-webkit-input-placeholder { color:#000; }
 ::-moz-placeholder          { color:#000; } /* Firefox 19+ */
 :-moz-placeholder           { color:#000; } /* Firefox 18- */
