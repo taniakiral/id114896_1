@@ -241,6 +241,8 @@ ul .cart {
 }
 
 .slide .btn:active {
+	padding-top: 7px;
+	border-top: 3px solid #9b2d30;
 	background: #b63538;
 }
 
@@ -345,6 +347,8 @@ ul .cart {
 }
 
 .btn-red:active {
+	padding-top: 7px;
+	border-top: 3px solid #9b2d30;
 	background: #b63538;
 }
 
@@ -357,6 +361,8 @@ ul .cart {
 }
 
 .btn-green:active {
+	padding-top: 7px;
+	border-top: 3px solid #007b47;
 	background: #009053;
 }
 
@@ -369,6 +375,8 @@ ul .cart {
 }
 
 .btn-yellow:active {
+	padding-top: 7px;
+	border-top: 3px solid #a3841f;
 	background: #c09b23;
 }
 
@@ -844,12 +852,13 @@ input[type="checkbox"]:checked + label:hover:before {
 	background: #fb565a;
 }
 
-.catalog-item-button:hover{
+.catalog-item-button:hover {
 	background:#d6494d;
 }
 
-.catalog-item-button:active{
-	padding-top:9px;
+.catalog-item-button:active {
+	padding-top: 9px;
+	border-top: 3px solid #9b2d30;
 	background:#b63538;
 }
 
@@ -904,6 +913,20 @@ input[type="checkbox"]:checked + label:hover:before {
 	padding-top: 7px;
 	border-top: 3px solid #b5b5b5;
 	background: #d5d5d5;
+}
+
+.pagination-link.pagination-link-active:hover {
+	padding: 8px 14px;
+	background: #fff;
+	border-radius: 3px;
+	border: 2px solid #f2f2f2;
+}
+
+.pagination-link.pagination-link-active:active {
+	padding: 8px 14px;
+	background: #fff;
+	border-radius: 3px;
+	border: 2px solid #f2f2f2;
 }
 
 /*Подвал*/
@@ -968,6 +991,8 @@ input[type="checkbox"]:checked + label:hover:before {
 }
 
 .button-red:active{
+	padding-top: 7px;
+	border-top: 3px solid #9b2d30;
 	background: #b63538;
 }
 
@@ -1124,12 +1149,13 @@ input[type="checkbox"]:checked + label:hover:before {
 	margin-top: 8px;
 	margin-bottom: 19px;
 	padding: 8px 15px;
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	outline: none;
 	color: #000;
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
-	border: 2px solid #d7dcde;
-	border-radius: 3px;
 }
 
 .popup-label {
@@ -1158,11 +1184,13 @@ input[type="checkbox"]:checked + label:hover:before {
 	margin-bottom: 48px;
 	border: 2px solid #d7dcde;
 	border-radius: 3px;
+	outline: none;
 	color: #000;
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
 	box-sizing: border-box;
+	resize: none;
 }
 
 .popup-input:hover,
@@ -1183,8 +1211,7 @@ input[type="checkbox"]:checked + label:hover:before {
 .popup .btn-popup-send {
 	float: left;
 	width: 220px;
-	padding: 10px 0;
-	padding-left: 10px;
+	padding: 10px 75px;
 	color: #fff;
 	font-size: 12px;
 	line-height: 18px;
@@ -1200,8 +1227,10 @@ input[type="checkbox"]:checked + label:hover:before {
 }
 
 .popup .btn-popup-send:active {
-	background: #b63538;
+	padding-top: 7px;
 	border: none;
+	border-top: 3px solid #9b2d30;
+	background: #b63538;
 }
 
 .popup .btn-popup-reset {
@@ -1226,8 +1255,3 @@ input[type="checkbox"]:checked + label:hover:before {
 	border-top: 3px solid #b5b5b5;
 	background: #d5d5d5;
 }
-
-::-webkit-input-placeholder { color:#000; }
-::-moz-placeholder          { color:#000; } /* Firefox 19+ */
-:-moz-placeholder           { color:#000; } /* Firefox 18- */
-:-ms-input-placeholder      { color:#000; }
